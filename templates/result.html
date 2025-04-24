@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - DeepFake Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container result">
+        <h1>Prediction Result</h1>
+        <img src="data:image/jpeg;base64,{{ image_data }}" alt="Uploaded Image" class="preview">
+
+        <div class="output">
+            <p><strong>Model Used:</strong> {{ model }}</p>
+            <p><strong>Preprocessing:</strong> {{ preprocess }}</p>
+            <p><strong>Predicted Class:</strong> {{ result.pred_class }}</p>
+            <p><strong>Confidence:</strong> {{ result.confidence }}</p>
+            <p><strong>Inference Time:</strong> {{ result.time_ms }} ms</p>
+        </div>
+
+        <a href="/" class="back-button">Try Another Image</a>
+    </div>
+</body>
+</html>
