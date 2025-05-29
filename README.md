@@ -1,4 +1,3 @@
-```markdown
 # DeepFake Image Detection
 
 **Mentor:** Prof. Koteswar Rao Jerripothula, Dept. of Electrical Engineering  
